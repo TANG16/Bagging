@@ -2,8 +2,8 @@
 % 36 dataset istenen veri kumesi secilir. Bu data set karistirilir. Daha
 % sonra %50 Egitim, %50 Test kumesi olacak sekilde sinif bilgileri ile
 % alinir. Egitim kumesi ile karar agaci modellenir. Daha sonra test kumesi
-% uzerinde tahminleme yap?l?r. Ayni egitim kumesi uzerine Bagging
-% uygulan?r. Bagging de 50 adet karar agaci ile kararlar birlestirilir. Ve
+% uzerinde tahminleme yapilir. Ayni egitim kumesi uzerine Bagging
+% uygulanir. Bagging de 50 adet karar agaci ile kararlar birlestirilir. Ve
 % demokrasi usulu ile birlestiririlir. Bu islemeler 10 kez tekrarlanarak
 % sonuclar karsilastirilir.
 
@@ -24,7 +24,7 @@ tumdatasets={'abalone','anneal','audiology','autos','balance-scale','breast-canc
 baseLearnerAccuracyArray=[];
 emsembleLearnerAccuracyArray=[];
 
-%  10 kez egitim k?mesini karistiralim ve random secelim.
+%  10 kez egitim kumesini karistiralim ve random secelim.
 for i=1:10
 
 shuffle = randperm(size(ornekler,1));
